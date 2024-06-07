@@ -1,2 +1,2 @@
-# intermediate_project
-Project repository for intermediate mentee
+# WEEK ONE TASK
+We extracted a code pattern from a text string using python regular expression function (REGEX). 
