@@ -6,10 +6,10 @@ The task script use a regular expression (regex) pattern in Python to extract al
 
 The regex pattern that was used is **"(?i)\bCOVID-19\b"**
 
-**"(?i)"** enables case-insensitive matching.
-**"\b"** matches a word boundary to ensure "COVID-19" is matched as a whole word.
-**"COVID-19"** exact string to match, case-insensitively.
-**"\b:"** Another word boundary to ensure "COVID-19" is captured as a whole word.
+- **"(?i)"** enables case-insensitive matching.
+- **"\b"** matches a word boundary to ensure "COVID-19" is matched as a whole word.
+- **"COVID-19"** exact string to match, case-insensitively.
+- **"\b:"** Another word boundary to ensure "COVID-19" is captured as a whole word.
 
 When the script run, it a list all occurrences of "COVID-19" found in the text. 
 
