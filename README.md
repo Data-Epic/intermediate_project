@@ -1,2 +1,2 @@
 # WEEK ONE TASK
-We extracted a date pattern from a text string using python regular expression function (REGEX). 
+I extracted a date pattern from a bunch of text strings using python regular expression (REGEX), I used findall function from re library for the extraction. 
