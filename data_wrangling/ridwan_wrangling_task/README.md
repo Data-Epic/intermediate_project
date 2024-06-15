@@ -44,4 +44,4 @@ The methos involved both Interquartile Range method (IQR method) and visual (box
 The cleaned data were validated that the cleaned data adheres to expected ranges and contains no unexpected or reintroduced issues by ensuring it meets the specified requirements before saving or used.
 
 ### **10. Final Data Output**
-Saved the cleaned dataset to a CSV file to preserve the cleaned data. 
+Saved the cleaned dataset to a CSV file to preserve the cleaned data.
