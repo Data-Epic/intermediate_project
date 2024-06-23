@@ -1,12 +1,31 @@
 # Week 2 Task: Wrangling Online Retail Data
 
+## Dataset Information
+The dataset use is [Online Retail](http://archive.ics.uci.edu/dataset/352/online+retail) dataset which was gotten and downloaded from the UC 
+Irvine Machine Learning Repository 
+
+### Data Information from the [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/dataset/352/online+retail) 
+**Variables Table**
+
+| Variable Name | Role        | Type        | Description                                                                    | Units   | Missing Values |
+|---------------|-------------|-------------|--------------------------------------------------------------------------------|---------|----------------|
+| InvoiceNo     | ID          | Categorical | A 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'C', it indicates a cancellation. |         | No             |
+| StockCode     | ID          | Categorical | A 5-digit integral number uniquely assigned to each distinct product.           |         | No             |
+| Description   | Feature     | Categorical | Product name.                                                                  |         | No             |
+| Quantity      | Feature     | Integer     | The quantities of each product (item) per transaction.                         |         | No             |
+| InvoiceDate   | Feature     | Date        | The day and time when each transaction was generated.                          |         | No             |
+| UnitPrice     | Feature     | Continuous  | Product price per unit.                                                        | Sterling| No             |
+| CustomerID    | Feature     | Categorical | A 5-digit integral number uniquely assigned to each customer.                  |         | No             |
+| Country       | Feature     | Categorical | The name of the country where each customer resides.                           |         | No             |
+
+
+
 ## Data cleaning steps documentation
 
 ### **1. Library Importation**
-To begin the data cleaning process, all the necessary libraries were imported. In this task, we used fetch_ucirepo, pandas, numpy, matplotlib and seaborn.
+To begin the data cleaning process, all the necessary libraries were imported. In this task, we used pandas, numpy, matplotlib and seaborn.
 
-1. **`fetch_ucirepo`**: To extract the datasets from the UC Irvine Machine Learning Repository. It provided a more convenient way to access and load the Online Retail dataset.
-2. **`pandas`**: It is used for the data manipulation, including loading, merging, cleaning, and transforming data.
+2. **`pandas`**: It is used for the data loading, data manipulation, including loading, merging, cleaning, and transforming data.
 3. **`numpy`**: It is used for numerical operations.
 4. **`matplotlib.pyplot`**: It was used to used for generating visualizations.
 5. **`seaborn`**: It was used to used for generating visualizations.
@@ -14,7 +33,7 @@ To begin the data cleaning process, all the necessary libraries were imported. I
 Each libraries were chosen to fulfill specific roles in data handling, visualization, and analysis, making the cleaning process more efficient and effective.
 
 ### **2. Data Loading**
-Loaded the [Online Retail](http://archive.ics.uci.edu/dataset/352/online+retail) dataset from the UC Irvine Machine Learning Repository using the `fetch_ucirepo` library to perform data cleaning on the Online Retail dataset.
+Loaded the excel dataset [Online Retail](http://archive.ics.uci.edu/dataset/352/online+retail) dataset that was downloaded from the UC Irvine Machine Learning Repository using `pandas`
 
 ### **3. Data Inspection**
 1. **Dataset Information**: To provides an overview of the datasets including column names, data types, and the count of non-null values.
@@ -38,10 +57,11 @@ The text data in 'Description' and 'Country' columns were normalize to ensure co
 Convert 'InvoiceDate' to a proper datetime format to ensure correct data type.
 
 ### **8. Handling Outliers**
-The methos involved both Interquartile Range method (IQR method) and visual (box plot) techniques to detect outliers in the 'Quantity' and 'UnitPrice' columns. However, due to the severity or nature of outliers observed in the data, manual thresholding was employed after visual inspection to ensure that only relevant data points were retained. 
+The methods involved both Interquartile Range method (IQR method) and visual (box plot) techniques to detect outliers in the 'Quantity' and 'UnitPrice' columns. However, due to the severity or nature of outliers observed in the data, manual thresholding was employed after visual inspection to ensure that only relevant data points were retained. 
 
 ### **9. Data Validation**
 The cleaned data were validated that the cleaned data adheres to expected ranges and contains no unexpected or reintroduced issues by ensuring it meets the specified requirements before saving or used.
 
 ### **10. Final Data Output**
-Saved the cleaned dataset to a CSV file to preserve the cleaned data.
+Saved the cleaned dataset to a CSV file (online_retail_cleaned) to preserve the cleaned data.
+
