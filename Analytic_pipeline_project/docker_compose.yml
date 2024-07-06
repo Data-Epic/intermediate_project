@@ -1,5 +1,0 @@
-services:
-  data_pipeline:
-    build: .
-    volumes:
-      - .:/Analytic_pipeline_project
