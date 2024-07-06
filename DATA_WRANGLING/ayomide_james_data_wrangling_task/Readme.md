@@ -1,0 +1,1 @@
+This project involves data exploration and cleaning of an online retail dataset using Python and the pandas library. The primary goal is to handle missing values and ensure the dataset is clean and ready for further analysis. The cleaned dataset is then saved in both CSV and Excel formats.
