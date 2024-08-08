@@ -1,0 +1,6 @@
+duckdb-engine 
+pandas 
+pyarrow 
+sqlalchemy 
+duckdb-engine 
+pandas 

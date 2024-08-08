@@ -1,4 +1,5 @@
-# intermediate_project
+# Intermediate_project
+
 Project repository for intermediate mentee
 
 ### Data Wrangling
